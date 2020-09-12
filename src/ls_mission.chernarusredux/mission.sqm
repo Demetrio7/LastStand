@@ -8,22 +8,22 @@ class EditorData
 	toggles=554;
 	class ItemIDProvider
 	{
-		nextID=4764;
+		nextID=5441;
 	};
 	class MarkerIDProvider
 	{
-		nextID=17;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
-		nextID=176;
+		nextID=194;
 	};
 	class Camera
 	{
-		pos[]={11671.554,348.0123,13020.738};
-		dir[]={0.86882526,-0.45471045,0.19652359};
-		up[]={0.44361851,0.89055878,0.10034301};
-		aside[]={0.22064498,-9.2023402e-007,-0.97547543};
+		pos[]={12051.302,182.0155,12665.155};
+		dir[]={0.83411574,-0.33004501,-0.44221428};
+		up[]={0.29180592,0.94386989,-0.15470123};
+		aside[]={-0.46846172,1.4019606e-006,-0.8836236};
 	};
 };
 binarizationWanted=0;
@@ -90,13 +90,18 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Walls",
 	"RD501_patch_bacta_tank",
-	"A3_Structures_F_Mil_BagFence"
+	"A3_Structures_F_Mil_BagFence",
+	"jmm_markersV2",
+	"A3_Structures_F_Ind_Transmitter_Tower",
+	"cba_xeh",
+	"RD501_patch_U_Wing",
+	"A3_Armor_F_Exp_APC_Tracked_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=53;
+		items=56;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -428,6 +433,25 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item53
+		{
+			className="jmm_markersV2";
+			name="jmm_markersV2";
+		};
+		class Item54
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item55
+		{
+			className="A3_Armor_F_Exp";
+			name="Arma 3 Apex - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=10121883;
@@ -450,25 +474,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -501,6 +506,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -561,7 +585,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=248;
+		items=263;
 		class Item0
 		{
 			dataType="Layer";
@@ -8259,7 +8283,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12107.143,161.66278,12605.905};
+						position[]={12110.521,161.66278,12602.816};
 						angles[]={0,0.2967062,0};
 					};
 					side="Empty";
@@ -9057,7 +9081,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12097.725,162.15373,12607.352};
+						position[]={12093.082,162.15373,12608.136};
 						angles[]={0,0.36651912,0};
 					};
 					side="Empty";
@@ -9372,7 +9396,7 @@ class Mission
 				};
 			};
 			id=2576;
-			atlOffset=0.00033569336;
+			atlOffset=0.00053405762;
 		};
 		class Item4
 		{
@@ -31150,7 +31174,7 @@ class Mission
 			};
 			id=4708;
 			type="RD501_bacta_healing";
-			atlOffset=0.18359375;
+			atlOffset=0.18360901;
 		};
 		class Item206
 		{
@@ -31830,6 +31854,143 @@ class Mission
 			id=4763;
 			type="Land_BagFence_Long_F";
 			atlOffset=0.73934937;
+		};
+		class Item248
+		{
+			dataType="Marker";
+			position[]={12018.715,159.034,12803.4};
+			name="marker_17";
+			text="БСО";
+			type="jmm_i_Mando";
+			id=4764;
+			atlOffset=0.00042724609;
+		};
+		class Item249
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12259.104,175.60342,12604.879};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=4767;
+			type="Land_Communication_F";
+			atlOffset=0.0022735596;
+		};
+		class Item250
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12169.961,160.99294,12657.35};
+				angles[]={0,5.0440016,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4768;
+			type="RD501_u_wing_MKII";
+			atlOffset=-0.076446533;
+		};
+		class Item251
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12101.48,161.87686,12604.718};
+				angles[]={0,0.31415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4776;
+			type="O_T_APC_Tracked_02_cannon_ghex_F";
+			atlOffset=0.084838867;
+		};
+		class Item252
+		{
+			dataType="Layer";
+			name="Headquarters #B";
+			id=4868;
+			atlOffset=-0.040557861;
+		};
+		class Item253
+		{
+			dataType="Layer";
+			name="Fuel Dump #B";
+			id=4903;
+			atlOffset=-0.0013580322;
+		};
+		class Item254
+		{
+			dataType="Layer";
+			name="Mortar Pit #B";
+			id=4931;
+			atlOffset=-0.0008392334;
+		};
+		class Item255
+		{
+			dataType="Layer";
+			name="Field Radar #O";
+			id=5037;
+			atlOffset=-0.045257568;
+		};
+		class Item256
+		{
+			dataType="Layer";
+			name="Field HQ #O";
+			id=5146;
+			atlOffset=-0.00054931641;
+		};
+		class Item257
+		{
+			dataType="Layer";
+			name="Field Barracks #O2";
+			id=5260;
+			atlOffset=-0.006362915;
+		};
+		class Item258
+		{
+			dataType="Layer";
+			name="Base Objects";
+			id=5320;
+			atlOffset=-0.015670776;
+		};
+		class Item259
+		{
+			dataType="Layer";
+			name="UAV Terminal #B";
+			id=5344;
+			atlOffset=-0.0010528564;
+		};
+		class Item260
+		{
+			dataType="Layer";
+			name="Artillery Radar #O";
+			id=5373;
+			atlOffset=-0.001159668;
+		};
+		class Item261
+		{
+			dataType="Layer";
+			name="Anti-Air Radar #B";
+			id=5397;
+			atlOffset=0.0070495605;
+		};
+		class Item262
+		{
+			dataType="Layer";
+			name="Concrete Tower Checkpoint #B";
+			id=5430;
+			atlOffset=-0.0073394775;
 		};
 	};
 };
