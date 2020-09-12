@@ -8,7 +8,7 @@ class EditorData
 	toggles=554;
 	class ItemIDProvider
 	{
-		nextID=5441;
+		nextID=5442;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12051.302,182.0155,12665.155};
-		dir[]={0.83411574,-0.33004501,-0.44221428};
-		up[]={0.29180592,0.94386989,-0.15470123};
-		aside[]={-0.46846172,1.4019606e-006,-0.8836236};
+		pos[]={11888.033,252.36461,12772.923};
+		dir[]={0.76784682,-0.58090645,-0.27053195};
+		up[]={0.54805285,0.81382161,-0.19309162};
+		aside[]={-0.33234963,2.7888891e-006,-0.9432897};
 	};
 };
 binarizationWanted=0;
@@ -95,13 +95,14 @@ addons[]=
 	"A3_Structures_F_Ind_Transmitter_Tower",
 	"cba_xeh",
 	"RD501_patch_U_Wing",
-	"A3_Armor_F_Exp_APC_Tracked_02"
+	"A3_Armor_F_Exp_APC_Tracked_02",
+	"A3_Structures_F_Tank_Military_RepairDepot"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=57;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -452,6 +453,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item56
+		{
+			className="A3_Structures_F_Tank";
+			name="Arma 3 Tank - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=10121883;
@@ -585,7 +593,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=263;
+		items=264;
 		class Item0
 		{
 			dataType="Layer";
@@ -31991,6 +31999,23 @@ class Mission
 			name="Concrete Tower Checkpoint #B";
 			id=5430;
 			atlOffset=-0.0073394775;
+		};
+		class Item263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12107.334,161.62883,12592.469};
+				angles[]={0,1.8849555,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5441;
+			type="Land_RepairDepot_01_green_F";
+			atlOffset=0.20085144;
 		};
 	};
 };
